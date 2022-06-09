@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Lucas Czeck">
+  <meta name="description" content="Você quer comprar uma BMW ou uma Mercedes?">
+  <link rel="stylesheet" href="style.css">
+  <title>BMW x Mercedes</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="split left">
+      <h1 id="title-left">BMW</h1>
+      <a class="btn" id="btn-left" onclick="open_bmw()">Especificações</a>
+      <div class="specs-bmw">
+        <ul>
+          <li><span>Motor:</span> 3.0 510 cv a 6.250rpm, 66,3 kgfm a 2.750 rpm</li>
+          <li><span>Câmbio:</span> Automático, 8 marchas</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="split right">
+      <h1 id="title-right">Mercedes</h1>
+      <a class="btn" id="btn-right" onclick="open_mercedes()">Especificações</a>
+      <div class="specs-mercedes">
+        <ul>
+          <li>Motor: 3.0 510 cv a 6.250rpm, 66,3 kgfm a 2.750 rpm</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
