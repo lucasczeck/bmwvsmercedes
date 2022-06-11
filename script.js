@@ -8,6 +8,13 @@ var specs_mercedes = document.querySelector('.specs-mercedes');
 var title_mercedes = document.querySelector('#title-right');
 var btn_mercedes = document.querySelector('#btn-right');
 
+left.addEventListener('mouseenter', () => container.classList.add('hover-left'));
+left.addEventListener('mouseleave', () => container.classList.remove('hover-left'));
+left.addEventListener('mouseenter', () => close_mercedes());
+right.addEventListener('mouseenter', () => container.classList.add('hover-right'));
+right.addEventListener('mouseleave', () => container.classList.remove('hover-right'));
+right.addEventListener('mouseenter', () => close_bmw());
+
 function open_bmw(){
     specs_bmw.style.display = 'block';
     title_bmw.style.display = 'none';
@@ -20,7 +27,14 @@ function open_mercedes(){
     btn_mercedes.style.display = 'none';
 }
 
-left.addEventListener('mouseenter', () => container.classList.add('hover-left'));
-left.addEventListener('mouseleave', () => container.classList.remove('hover-left'));
-right.addEventListener('mouseenter', () => container.classList.add('hover-right'));
-right.addEventListener('mouseleave', () => container.classList.remove('hover-right'));
+function close_bmw(){
+    specs_bmw.style.display = 'none';
+    title_bmw.style.display = 'block';
+    btn_bmw.style.display = 'block';
+}
+
+function close_mercedes(){
+    specs_mercedes.style.display = 'none';
+    title_mercedes.style.display = 'block';
+    btn_mercedes.style.display = 'block';
+}

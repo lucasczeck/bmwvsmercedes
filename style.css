@@ -29,6 +29,8 @@ h1 {
     transform: translateX(-50%);
     white-space: nowrap;
     transition: all var(--speed) ease-in-out;
+    animation: animate;
+    animation-duration: var(--speed);
 }
 
 
@@ -49,6 +51,8 @@ h1 {
     width: 15rem;
     padding: 1.5rem;
     transition: all var(--speed) ease-in-out;
+    animation: animate;
+    animation-duration: var(--speed);
 }
 
 .hover-right #title-left, .hover-left #title-right {
@@ -147,13 +151,15 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40%;
+    width: auto;
     height: auto;
     background-color: var(--left-bg-specs-color);
     display: none;
     animation: animate;
     animation-duration: var(--speed);
     opacity: 0.8;
+    color: whitesmoke;
+    padding-right: 20px;
 }
 
 .specs-mercedes {
@@ -161,13 +167,15 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40%;
+    width: auto;
     height: auto;
     background-color: var(--right-bg-specs-color);
     display: none;
     animation: animate;
     animation-duration: var(--speed);
     opacity: 0.8;
+    color: whitesmoke;
+    padding-right: 20px;
 }
 
 @keyframes animate {
@@ -177,4 +185,40 @@ h1 {
 
 .specs-bmw ul li span {
     font-weight: bold;
+}
+
+.specs-mercedes ul li span {
+    font-weight: bold;
+}
+
+.specs-bmw ul li {
+    font-weight: 100;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.specs-mercedes ul li {
+    font-weight: 100;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.specs-bmw img {
+    padding-left: 100%;   
+    padding-top: 5px;
+    height: 20px;
+}
+
+.specs-bmw img:hover {
+    cursor: pointer;
+}
+
+.specs-mercedes img {
+    padding-left: 100%;   
+    padding-top: 5px;
+    height: 20px;
+}
+
+.specs-mercedes img:hover {
+    cursor: pointer;
 }
